@@ -1,0 +1,32 @@
+.container {
+    display: block;
+    
+    @media screen and (min-width: 769px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+  
+    .image {
+      height: 150px;
+      background-image: url('../../../public/images/stock-photo-1.png');
+      background-size: cover;
+      background-position: center;
+  
+      @media screen and (min-width: 769px) {
+        min-height: 100vh;
+        flex: 0 1 50%;
+      }
+    }
+  
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+      @media screen and (min-width: 769px) {
+        flex: 1;
+      }
+    }
+  }
